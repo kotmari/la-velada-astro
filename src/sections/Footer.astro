@@ -1,5 +1,5 @@
-<footer class="w-full border-primary border-t-2 flex flex-col md:flex-row justify-center items-center md:justify-between pt-10 pb-20">
-  <span>
+<footer class="mt-20 w-full border-primary border-t-2 flex flex-col md:flex-row justify-center items-center md:justify-between pt-10 pb-20 gap-y-10">
+  <span class="text-primary text-center">
     &copy; 2024 La Velada <span aria-hidden class="hidden md:inline">|</span>
     <br
       aria-hidden
@@ -14,15 +14,15 @@
       <a href="#" class="hover:text-primary">Terminos y condiciones</a>
     </li>
   </ul> -->
-  <ul>
+  <ul class="flex flex-row gap-x-6 items-center">
     <li>
-      <a href="#" class="hover:text-primary" target="_blank" rel="noopener">
+      <a href="#" class="text-primary" target="_blank" rel="noopener">
         <svg
           width="48"
           height="48"
           fill="none"
           viewBox="0 0 48 48"
-          class:list={Astro.props.class}
+          class="hover:scale-125 hover:opacity-70 transition inline-block"
           role="img"
           aria-label="Logotipo de Instagram"
         >
@@ -37,12 +37,12 @@
       </a>
     </li>
     <li>
-      <a href="#" class="hover:text-primary" target="_blank" rel="noopener">
+      <a href="#" class="text-primary" target="_blank" rel="noopener">
         <svg
           width="35px"
           height="48px"
           viewBox="0 0 35 32"
-          class:list={Astro.props.class}
+          class="hover:scale-125 hover:opacity-70 transition inline-block"
           role="img"
           aria-label="Logotipo de X"
         >

@@ -1,0 +1,49 @@
+<!-- <div id="smoke-bg" class="fixed top-0 h-full w-full"></div>
+
+<script>
+   import * as THREE from 'three';
+
+   const $bg = document.getElementById("smoke-bg");
+
+   const w = window.innerWidth
+   const h = window.innerHeight
+
+   const scene = new THREE.Scene()
+   const camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000)
+   camera.position.z = 10
+   scene.add(camera)
+
+   
+
+
+
+   const canvas = document.createElement("canvas");
+   $bg?.appendChild(canvas);
+
+   const renderer = new THREE.WebGLRenderer({ canvas: canvas });
+   renderer.setSize(w, h)
+
+   renderer.setClearColor(0x000000, 1)
+
+   const geometty = new THREE.BoxGeometry(1, 1, 1)
+   const material = new THREE.MeshBasicMaterial({
+      color: 0x0099ff
+   })
+
+   const cube = new THREE.Mesh(geometty, material)
+   scene.add(cube)
+
+
+   renderer.render(scene, camera)
+
+   function animate() {
+      requestAnimationFrame(animate);
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+      renderer.render(scene, camera);
+   }
+
+   animate();
+
+
+</script> -->
